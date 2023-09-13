@@ -6,7 +6,7 @@
 /*   By: fsarkoh <fsarkoh@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/09/13 15:08:41 by fsarkoh           #+#    #+#             */
-/*   Updated: 2023/09/13 15:45:20 by fsarkoh          ###   ########.fr       */
+/*   Updated: 2023/09/13 16:09:27 by fsarkoh          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -35,12 +35,13 @@ ClapTrap::~ClapTrap(void)
 	std::cout << "A ClapTrap has been destroyed!" << std::endl;
 }
 
-void	ClapTrap::operator=(const ClapTrap &claptrap)
+ClapTrap	&ClapTrap::operator=(const ClapTrap &claptrap)
 {
 	this->_name = claptrap._name;
 	this->_hit_points = claptrap._hit_points;
 	this->_energy_points = claptrap._energy_points;
 	this->_attack = claptrap._attack;
+	return (*this);
 }
 
 void	ClapTrap::attack(const std::string &target)

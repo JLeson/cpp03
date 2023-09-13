@@ -6,7 +6,7 @@
 /*   By: fsarkoh <fsarkoh@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/09/13 15:53:09 by fsarkoh           #+#    #+#             */
-/*   Updated: 2023/09/13 16:22:35 by fsarkoh          ###   ########.fr       */
+/*   Updated: 2023/09/13 16:26:00 by fsarkoh          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,6 +17,7 @@ class ScavTrap : public ClapTrap
 {
 private:
 	ScavTrap(void);
+
 public:
 	ScavTrap(std::string name);
 	~ScavTrap(void);

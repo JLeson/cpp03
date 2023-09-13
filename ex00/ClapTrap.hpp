@@ -6,7 +6,7 @@
 /*   By: fsarkoh <fsarkoh@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/09/13 15:04:42 by fsarkoh           #+#    #+#             */
-/*   Updated: 2023/09/13 15:21:49 by fsarkoh          ###   ########.fr       */
+/*   Updated: 2023/09/13 16:05:31 by fsarkoh          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,6 +16,7 @@
 class ClapTrap
 {
 private:
+	ClapTrap(void);
 	std::string		_name;
 	unsigned int	_hit_points;
 	unsigned int	_energy_points;

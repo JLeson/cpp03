@@ -6,7 +6,7 @@
 /*   By: fsarkoh <fsarkoh@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/09/13 15:54:57 by fsarkoh           #+#    #+#             */
-/*   Updated: 2023/09/13 16:25:05 by fsarkoh          ###   ########.fr       */
+/*   Updated: 2023/09/13 16:27:43 by fsarkoh          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -43,5 +43,10 @@ void	ScavTrap::attack(const std::string &target)
 
 void	ScavTrap::gaurdGate(void)
 {
+	if (this->_hit_points == 0)
+	{
+		std::cout << "ScavTrap " << this->_name << " is dead!" << std::endl;
+		return ;
+	}
 	std::cout << "ScavTrap " << this->_name << " is now in gate keeper mode" << std::endl;	
 }

@@ -6,7 +6,7 @@
 /*   By: fsarkoh <fsarkoh@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/09/13 15:03:52 by fsarkoh           #+#    #+#             */
-/*   Updated: 2023/09/13 16:17:49 by fsarkoh          ###   ########.fr       */
+/*   Updated: 2023/09/13 16:27:52 by fsarkoh          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,6 +16,7 @@ int	main(void)
 {
 	ScavTrap	claptrap("The original claptrap");
 
+	claptrap.gaurdGate();
 	claptrap.takeDamage(2);
 	claptrap.attack("The not original claptrap");
 	claptrap.beRepaired(2);
